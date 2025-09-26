@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --col1: #85a66d;
+  --bg1: #183361;
+  --bg2: #6A98D0;
+}
+
+a{
+  color: #6A98D0
+}
+body{
+  background-color: white;
+  color: black;
+}
+.bgline3boxes{
+  background: linear-gradient(to right, #183361, rgb(1, 128, 1))
+}
+.page{
+  width: 90vw;
+  margin: 3em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Style Swiper Pagination */
+.custom-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+
+
+.header-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 50px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.slider > div {
+  flex-shrink: 0;
+}
+
+.lineMenu {
+  transition: width 0.3s ease-in-out;
+}
+
+.contactSingleBox{
+  background-color: var(--bg1);
+  color: white;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  padding: 1em;
+  cursor: pointer;
+}
+.iconContact{
+  background-color: white;
+  color: var(--bg1);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+/* General styling */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Keyframes for slides */
+@keyframes slide {
+  0%, 15% {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+  20%, 40% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  45%, 100% {
+      opacity: 0;
+      transform: translateY(10%);
+  }
+}
+
+/* Specific animations for each slide */
+.animate-slide-1 {
+  animation: slide 9s infinite;
+}
+
+.animate-slide-2 {
+  animation: slide 9s infinite;
+  animation-delay: 3s;
+}
+
+.animate-slide-3 {
+  animation: slide 9s infinite;
+  animation-delay: 6s;
+}
+
+
+.mainStickyHeader {
+  position: stickey; /* Makes the element sticky */
+  top: auto;           /* Sticks to the top of the viewport */
+  z-index: 1000;    /* Ensures it stays above other elements */
+  background-color: #101722; /* Dark background to match your theme */
+  padding: 12px 2.5vw; /* Padding for spacing */
+  display: flex;    /* Flexbox for layout */
+  justify-content: space-between; /* Align content */
+  align-items: center; /* Center items vertically */
+}
