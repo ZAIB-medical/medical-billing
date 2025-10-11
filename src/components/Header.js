@@ -8,24 +8,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { MdAddLocationAlt } from "react-icons/md";
 
 
-const topLinks1 = [
-    {
-        name: 'Join Our Team',
-        href: 'joinourteam',
-    },
-    {
-        name: 'Contact Us',
-        href: 'contactus',
-    },
-    {
-        name: 'Environmental Compliance Training',
-        href: 'environmentalcompliancetraining',
-    },
-    {
-        name: 'E-Manifest',
-        href: 'emanifest',
-    },
-]
+
 const menuItems = [
     {
         name: 'Home',
@@ -142,18 +125,8 @@ const Header = () => {
                 </div>
             </div>
             <div className="2ndSectionHeader bg-[#101722] flex p-3 justify-end text-sm gap-4 items-center">
-                <div className="leftHeader2nd flex gap-4">
-                    {
-                        topLinks1.map((me, index) => (
-                            <Link className='border-r-2 pr-4 text-gray-400 border-gray-400' key={index} href={me.href}>{me.name}</Link>
-                        ))
-                    }
-                </div>
-                <div className="rightHeader2nd text-3xl flex gap-4">
-                    <Link href={'/'}><FaFacebook /></Link>
-                    <Link href={'/'}><FaSquareInstagram /></Link>
-                    <Link href={'/'}><FaLinkedin /></Link>
-                </div>
+                
+                
             </div>
             <div className='sticky top-0 z-50'>
                 <div>

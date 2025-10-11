@@ -1,45 +1,47 @@
-import Image from 'next/image'
-import React from 'react'
-
+import React from "react";
+import { FaUserMd, FaHeartbeat, FaCertificate, FaRobot, FaCheckCircle } from "react-icons/fa"; // appropriate icons
 
 const data = [
-    {
-        img : 'https://transcure.net/wp-content/uploads/2024/01/Trusted-by-500-physicians.png', 
-        text: 'Trusted by 500+ physicians',
-    },
-    {
-        img : 'https://transcure.net/wp-content/uploads/2024/01/Key-Steps-in-Medical-Billing-and-Coding-Services.png', 
-        text: 'Catering to 32+ specialties',
-    },
-    {
-        img : 'https://transcure.net/wp-content/uploads/2024/01/1100-certified-medical-billers-and-coders.png', 
-        text: '1100+ certified medical billers and coders',
-    },
-    {
-        img : 'https://transcure.net/wp-content/uploads/2024/01/End-to-End-Automated-Billing-Solution.png', 
-        text: 'End-to-End Automated Billing Solution',
-    },
-    {
-        img : 'https://transcure.net/wp-content/uploads/2024/01/Up-to-98-First-Pass-Clean-Claim-Rate-.png', 
-        text: 'Up to 98% First Pass Clean Claim Rate ',
-    },
-]
+  {
+    icon: <FaUserMd className="text-6xl text-[var(--col1)]" />,
+    text: "Trusted by 500+ physicians",
+  },
+  {
+    icon: <FaHeartbeat className="text-6xl text-[var(--col1)]" />,
+    text: "Catering to 32+ specialties",
+  },
+  {
+    icon: <FaCertificate className="text-6xl text-[var(--col1)]" />,
+    text: "1100+ certified medical billers and coders",
+  },
+  {
+    icon: <FaRobot className="text-6xl text-[var(--col1)]" />,
+    text: "End-to-End Automated Billing Solution",
+  },
+  {
+    icon: <FaCheckCircle className="text-6xl text-[var(--col1)]" />,
+    text: "Up to 98% First Pass Clean Claim Rate",
+  },
+];
 
 const IconBgText2 = () => {
   return (
-    <div>
-        <div className="grid grid-cols-5 gap-[2em] bg-[var(--bg1)] text-white p-[2em]">
-            {
-                data.map((me, index)=>(
-                    <div key={index} className='flex flex-col items-center gap-4 text-center'>
-                        <Image src={me.img} width={100} height={100} alt='ffdsdsf' />
-                        <p>{me.text}</p>
-                    </div>
-                ))
-            }
-        </div>
+    <div className="bg-[var(--bg1)] text-white p-[2em]">
+      <div className="grid grid-cols-5 gap-[2em]">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center gap-4 text-center transition-transform duration-300 hover:scale-105"
+          >
+            <div className="flex items-center justify-center p-5 bg-[#334157] rounded-full border-[6px] border-[var(--col1)]">
+              {item.icon}
+            </div>
+            <p className="text-lg">{item.text}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default IconBgText2
+export default IconBgText2;

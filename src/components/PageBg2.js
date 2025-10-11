@@ -17,7 +17,7 @@ const PageBg2 = (props) => {
                 </div>
             </div>
             <div className="rightPageBg2 w-[50%]">
-                <Image src={props.img} height={600} width={700} alt='ServicesBg' className='h-[auto] w-[100%]' />
+                <Image src={'/bg-scense.png'} height={600} width={700} alt='ServicesBg' className='h-[auto] w-[100%]' />
             </div>
         </div>
     )

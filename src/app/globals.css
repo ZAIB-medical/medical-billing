@@ -118,35 +118,31 @@ body{
 }
 
 /* Keyframes for slides */
-@keyframes slide {
-  0%, 15% {
-      opacity: 0;
-      transform: translateY(10%);
+/* === SLIDE-IN ANIMATION ON SCROLL === */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
   }
-  20%, 40% {
-      opacity: 1;
-      transform: translateY(0);
-  }
-  45%, 100% {
-      opacity: 0;
-      transform: translateY(10%);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Specific animations for each slide */
-.animate-slide-1 {
-  animation: slide 9s infinite;
+/* Animation class */
+.animate-slide-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
 }
 
-.animate-slide-2 {
-  animation: slide 9s infinite;
-  animation-delay: 3s;
+.animate-slide-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideIn 0.8s ease forwards;
 }
 
-.animate-slide-3 {
-  animation: slide 9s infinite;
-  animation-delay: 6s;
-}
 
 
 .mainStickyHeader {

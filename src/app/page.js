@@ -5,6 +5,8 @@ import SecondSection from "@/components/SecondSection";
 import SeventhSection from "@/components/SeventhSection";
 import SixthSection from "@/components/SixthSection";
 import ThirdSection from "@/components/ThirdSection";
+import AddedSection from "@/components/AddedSection";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -13,9 +15,8 @@ export default function Home() {
       <HeroHome />
       <SecondSection />
       <ThirdSection />
-      <FouryhSection />
+<AddedSection />
       <FifthSection />
-      <SixthSection />
       <SeventhSection />
     </div>
   );
