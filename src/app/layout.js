@@ -9,7 +9,11 @@ const inter = Poppins({ subsets: ["latin"], weight: ["500"] });
 export const metadata = {
   title: "IT Craft Hub | World Is Digital",
   description: "IT Craft Hub offers expert web development, Next.js, WordPress, Shopify, and graphics design services. Get fast, SEO-optimized, and scalable solutions to grow your business. Contact us today to get started!",
+  icons: {
+    icon: "/favicon.png",      // your main favicon
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (

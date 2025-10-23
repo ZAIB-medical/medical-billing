@@ -16,12 +16,14 @@ const footerLinks = [
   {
     title: "Services",
     links: [
-      { name: "Waste Transportation, Treatment, & Disposal", href: "/pages/services/layout1/wastetransportationtreatmentdisposal" },
-      { name: "Technical Solutions", href: "/pages/services/layout2/technicalsolutions" },
-      { name: "Onsite Services", href: "/pages/services/layout2/onsiteservices" },
-      { name: "Emergency Response", href: "/pages/services/layout1/emergencyresponse" },
-      { name: "Environmental Compliance Training", href: "/pages/services/layout3/training" },
-      { name: "Demilitarization", href: "/pages/services/layout3/demilitarization" },
+      { name: "Revenue Cycle Management", href: "/pages/services/layout3/training" },
+      { name: "Medical Billing", href: "/pages/services/layout2/technicalsolutions" },
+      { name: "Medical Billing Consulting", href: "/pages/services/layout2/onsiteservices" },
+      { name: "Credentialing", href: "/pages/services/layout1/emergencyresponse" },
+      { name: "Medical Billing Small Practices", href: "/pages/services/layout3/training" },
+      { name: "Ar Recovery", href: "/pages/services/layout3/demilitarization" },
+      { name: "Hospital Billing", href: "/pages/services/layout3/demilitarization" },
+
     ]
   },
   {

@@ -9,19 +9,19 @@ const testmonials = [
     {
         name: 'Dr. Anthony',
         job: 'National Medical Labs',
-        message: 'Transcure t has helped us save countless hours and improve our bottom line. The team is friendly, professional, and always available to answer our questions.',
+        message: 'ExpertMd t has helped us save countless hours and improve our bottom line. The team is friendly, professional, and always available to answer our questions.',
         img: 'https://transcure.net/wp-content/uploads/2023/05/Dr.-John-Smith.png'
     },
     {
         name: 'Dr. Richard',
         job: 'Laboratory Manager.',
-        message: 'I used to dread our billing process, but since implementing Transcure, it has become much more manageable and efficient',
+        message: 'I used to dread our billing process, but since implementing ExpertMd, it has become much more manageable and efficient',
         img: 'https://transcure.net/wp-content/uploads/2023/05/Laboratory-Manager..png'
     },
     {
         name: 'Dr. Susan',
         job: 'Laboratory Manager',
-        message: 'Transcure helped us save time and improve accuracy in our billing coordination. Highly recommended for any lab!',
+        message: 'ExpertMd helped us save time and improve accuracy in our billing coordination. Highly recommended for any lab!',
         img: 'https://transcure.net/wp-content/uploads/2023/05/Dr.-Susan.png'
     },
 ]

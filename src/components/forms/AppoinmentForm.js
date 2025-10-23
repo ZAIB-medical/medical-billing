@@ -17,7 +17,7 @@ const AppoinmentForm = () => {
         {/* Left Section: Image */}
         <div className="leftAppoinment flex justify-center w-full md:w-1/2">
           <Image 
-            src="https://cloud.appwrite.io/v1/storage/buckets/6798a41d001fa41e179c/files/6798f233001c7722e665/view?project=6794f195002eec77bf76&project=6794f195002eec77bf76" 
+            src="/bg-scense.png" 
             width={600} 
             height={600} 
             alt="Appointment Illustration" 
