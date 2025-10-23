@@ -26,13 +26,7 @@ const footerLinks = [
 
     ]
   },
-  {
-    title: "Resources",
-    links: [
-      { name: "Environmental Compliance Training", href: "/pages/services/layout3/training" },
-      
-    ]
-  },
+  
   {
     title: "Specialties",
     links: [
