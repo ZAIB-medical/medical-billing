@@ -72,7 +72,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="bg-[#0A2240] mt-10">
         <p className="text-center text-white py-5 text-sm md:text-base">
-          © 2025 Heritage Environmental Services. All Rights Reserved.
+          © 2025 ExpertMD Medical Billing Services. All Rights Reserved.
         </p>
       </div>
     </footer>
