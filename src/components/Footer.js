@@ -16,13 +16,13 @@ const footerLinks = [
   {
     title: "Services",
     links: [
-      { name: "Revenue Cycle Management", href: "/pages/services/layout3/training" },
-      { name: "Medical Billing", href: "/pages/services/layout2/technicalsolutions" },
-      { name: "Medical Billing Consulting", href: "/pages/services/layout2/onsiteservices" },
-      { name: "Credentialing", href: "/pages/services/layout1/emergencyresponse" },
-      { name: "Medical Billing Small Practices", href: "/pages/services/layout3/training" },
-      { name: "Ar Recovery", href: "/pages/services/layout3/demilitarization" },
-      { name: "Hospital Billing", href: "/pages/services/layout3/demilitarization" },
+     { name: 'Revenue Cycle Management', href: '/pages/services/layout3/training' },
+      { name: 'Medical Billing', href: '/pages/services/layout4/MedicalBilling' },
+      { name: 'Medical Billing Consulting', href: '/pages/services/layout2/onsiteservices' },
+      { name: 'Credentialing', href: '/pages/services/layout1/emergencyresponse' },
+      { name: 'Medical Billing Small Practices', href: '/pages/services/layout5/SmallStepsMedical' },
+      { name: 'Ar Recovery', href: '/pages/services/layout6/Ar' },
+      { name: 'Hospital Billing', href: '/pages/services/layout7/HospitalBilling' },
 
     ]
   },

@@ -102,15 +102,19 @@ const Header = () => {
                 </Link>
 
                 {me.links && (
-                  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col bg-[#202D42] text-white rounded-md shadow-lg z-10 transition duration-200 min-w-[250px]">
-                    {me.links.map((link, subIndex) => (
-                      <Link key={subIndex} href={link.href}
-                        className="px-4 py-2 hover:bg-[#6A98D0] transition-colors rounded">
-                        {link.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col bg-[#202D42] text-white rounded-md shadow-lg z-10 transition duration-200 min-w-[250px]">
+    {me.links.map((link, subIndex) => (
+      <Link
+        key={subIndex}
+        href={link.href}
+        className="px-4 py-2 text-[#D5D5D5] hover:text-black hover:bg-[#6A98D0] transition-all duration-200 rounded"
+      >
+        {link.name}
+      </Link>
+    ))}
+  </div>
+)}
+
               </div>
             ))}
           </div>

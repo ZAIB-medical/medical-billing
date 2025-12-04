@@ -21,7 +21,7 @@ const CycleDescComp = () => {
         <div className='flex justify-center mt-6'>
             <Image 
                 className='w-full max-w-md sm:max-w-lg md:max-w-xl' 
-                src={'https://transcure.net/wp-content/uploads/2024/03/rcm-info-768x777.webp'} 
+                src={'/Revenue.png'} 
                 width={600} 
                 height={600} 
                 alt='Revenue Cycle Illustration' 
