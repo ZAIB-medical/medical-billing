@@ -8,7 +8,7 @@ const menuItems = [
   { name: 'Home', href: '/' },
   {
     name: 'Services',
-    href: '/pages/services',
+    
     links: [
       { name: 'Revenue Cycle Management', href: '/pages/services/layout3/RCM' },
       { name: 'Medical Billing', href: '/pages/services/layout4/MedicalBilling' },
@@ -91,29 +91,35 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-5 items-center">
-            {menuItems.map((me, index) => (
-              <div className="relative group" key={index}>
-                <Link href={me.href} className="relative text-white px-2 py-1">
-                  {me.name}
-                  <div className="lineMenu w-0 h-[2px] bg-[#6A98D0] mt-1 absolute left-0 bottom-0 transition-all duration-300 group-hover:w-full"></div>
-                </Link>
-
-                {me.links && (
-  <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col bg-[#202D42] text-white rounded-md shadow-lg z-10 transition duration-200 min-w-[250px]">
-    {me.links.map((link, subIndex) => (
-      <Link
-        key={subIndex}
-        href={link.href}
-        className="px-4 py-2 text-[#D5D5D5] hover:text-black hover:bg-[#6A98D0] transition-all duration-200 rounded"
-      >
-        {link.name}
+           {menuItems.map((me, index) => (
+  <div className="relative group" key={index}>
+    {me.href ? (
+      <Link href={me.href} className="relative text-white px-2 py-1">
+        {me.name}
+        <div className="lineMenu w-0 h-[2px] bg-[#6A98D0] mt-1 absolute left-0 bottom-0 transition-all duration-300 group-hover:w-full"></div>
       </Link>
-    ))}
-  </div>
-)}
+    ) : (
+      <span className="relative text-white px-2 py-1 cursor-default">
+        {me.name}
+      </span>
+    )}
 
-              </div>
-            ))}
+    {me.links && (
+      <div className="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col bg-[#202D42] text-white rounded-md shadow-lg z-10 transition duration-200 min-w-[250px]">
+        {me.links.map((link, subIndex) => (
+          <Link
+            key={subIndex}
+            href={link.href}
+            className="px-4 py-2 text-[#D5D5D5] hover:text-black hover:bg-[#6A98D0] transition-all duration-200 rounded"
+          >
+            {link.name}
+          </Link>
+        ))}
+      </div>
+    )}
+  </div>
+))}
+
           </div>
 
           {/* Right Button */}
