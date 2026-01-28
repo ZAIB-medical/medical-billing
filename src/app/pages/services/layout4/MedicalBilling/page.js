@@ -106,11 +106,25 @@ const cardsServIco = [
 ---------------------------------------------*/
 
 const Page = () => {
+    const medicalBillingService = {
+  img: '/medicalbillingimage.png',
+  r2l: true, // image left, text right
+  title: 'Streamline Your Medical Billing Process',
+  short:
+    'Our Medical Billing services ensure accurate coding, timely submissions, and faster reimbursements for healthcare providers, reducing administrative burden and improving revenue collection.',
+  description:
+    'With ExpertMd’s Medical Billing solutions, your practice can focus on patient care while we manage claims, denials, and revenue cycle monitoring. Experience seamless billing and enhanced financial efficiency.',
+}
     return (
         <div>
             {/* ✅ Page Header */}
-            <PageBg2 img="https://cloud.appwrite.io/v1/storage/buckets/6798a41d001fa41e179c/files/6798c0df001975dd21dc/view?project=6794f195002eec77bf76" />
-
+ <PageBg2
+        img={medicalBillingService.img}
+        r2l={medicalBillingService.r2l}
+        title={medicalBillingService.title}
+        short={medicalBillingService.short}
+        description={medicalBillingService.description}
+      />
             <div className="page">
 
                 {/* ✅ Section 1 */}

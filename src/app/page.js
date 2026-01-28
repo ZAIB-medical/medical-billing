@@ -17,7 +17,7 @@ export default function Home() {
       <ThirdSection />
 <AddedSection />
       <FifthSection />
-      <SeventhSection />
+      {/* <SeventhSection /> */}
     </div>
   );
 }

@@ -26,9 +26,25 @@ const testmonials = [
 ]
 
 const page = () => {
+    const credentialingService = {
+  img: '/credentialingimage.png', // replace with your credentialing image
+  r2l: false, // image right, text left
+  title: 'Simplify Provider Credentialing',
+  short:
+    'Our Credentialing services ensure that your providers are properly enrolled, verified, and approved with all insurance networks, reducing delays and compliance risks.',
+  description:
+    'ExpertMd handles every step of provider credentialing, from primary source verification to enrollment in insurance networks. Save time, stay compliant, and get your providers ready to see patients without administrative hassles.',
+}
     return (
         <div>
-            <PageBg2 img = {'https://cloud.appwrite.io/v1/storage/buckets/6798a41d001fa41e179c/files/6798a42a0012373fe3f8/view?project=6794f195002eec77bf76&project=6794f195002eec77bf76'} />
+            <PageBg2
+        img={credentialingService.img}
+        r2l={credentialingService.r2l}
+        title={credentialingService.title}
+        short={credentialingService.short}
+        description={credentialingService.description}
+      />
+
             <div className='page'>
                 <BoxesLayout1 />
                 <L2RTextImg r2l={false} img={'https://transcure.net/wp-content/uploads/2023/05/Independent-Labs.png'} />

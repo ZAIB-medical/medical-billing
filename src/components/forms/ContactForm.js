@@ -19,7 +19,7 @@ const ContactForm = () => {
         <div className="leftAppoinment flex justify-center w-full md:w-1/2">
           <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px]">
             <Image 
-              src="/bg-scense.png"
+              src="/contactimage.png"
               alt="Appointment Illustration"
               fill
               style={{ objectFit: 'contain' }}
