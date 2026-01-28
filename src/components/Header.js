@@ -12,7 +12,7 @@ const menuItems = [
     links: [
       { name: 'Revenue Cycle Management', href: '/pages/services/layout3/RCM' },
       { name: 'Medical Billing', href: '/pages/services/layout4/MedicalBilling' },
-      { name: 'Credentialing', href: '/pages/services/layout1/emergencyresponse' },
+      { name: 'Credentialing', href: '/pages/services/layout1/credentialing' },
   
     ]
   },
