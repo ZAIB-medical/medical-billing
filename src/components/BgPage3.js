@@ -15,7 +15,7 @@ const BgPage3 = () => {
           Our neurology billing and coding services are designed to meet the specific needs of your practice. From claim submission to payment posting, we handle every aspect of the billing cycle with precision.
         </p>
         <Link
-          href="/"
+          href="/pages/contact"
           className="text-white bg-[var(--col1)] px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl font-bold flex items-center gap-2 rounded mx-auto"
         >
           Book An Appointment <FaArrowRightLong />

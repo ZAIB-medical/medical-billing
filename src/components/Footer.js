@@ -123,8 +123,18 @@ const Footer = () => {
       {/* ================= BOTTOM BAR ================= */}
       <div className="bg-[#0A2240]">
         <p className="text-center text-white py-5 text-sm md:text-base">
-          © 2025 ExpertMD Medical Billing Services. All Rights Reserved.
-        </p>
+   © {new Date().getFullYear()} ExpertMD Medical Billing Services. All Rights Reserved. <br />
+  Created by{' '}
+  <a 
+    href="https://inteleumsol.com" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="underline hover:text-[#6A98D0]"
+  >
+    Inteleum Solutions
+  </a>
+</p>
+
       </div>
 
     </footer>

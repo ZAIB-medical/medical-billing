@@ -50,12 +50,7 @@ const About = () => {
                     </p>
 
                     <div className="buttons flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto">
-                        <Link 
-                            href={'/pages/services'} 
-                            className='bg-[var(--bg1)] text-white text-lg sm:text-xl px-4 py-2 flex items-center gap-2 rounded-md justify-center'
-                        >
-                            <IoClipboard /> Our Services
-                        </Link>
+                       
                         <Link 
                             href={'/pages/contact'} 
                             className='bg-[var(--bg1)] text-white text-lg sm:text-xl px-4 py-2 flex items-center gap-2 rounded-md justify-center'

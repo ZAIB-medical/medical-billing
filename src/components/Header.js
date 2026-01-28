@@ -138,29 +138,46 @@ const Header = () => {
         </div>
 
         {/* ✅ Mobile Dropdown */}
-        {menuOpen && (
-          <div className="md:hidden bg-[#202D42] text-white flex flex-col p-4 gap-2">
-            {menuItems.map((me, index) => (
-              <div key={index} className="flex flex-col">
-                <Link href={me.href} className="py-2 px-2 hover:bg-[#6A98D0] rounded">{me.name}</Link>
-                {me.links && (
-                  <div className="ml-4 flex flex-col">
-                    {me.links.map((link, subIndex) => (
-                      <Link key={subIndex} href={link.href}
-                        className="py-1 px-2 hover:bg-[#6A98D0] rounded">
-                        {link.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+       {menuOpen && (
+  <div className="md:hidden bg-[#202D42] text-white flex flex-col p-4 gap-2">
+    {menuItems.map((me, index) => (
+      <div key={index} className="flex flex-col">
+        {/* Main menu item */}
+        {me.href ? (
+          <Link
+            href={me.href}
+            className="py-2 px-2 hover:bg-[#6A98D0] rounded transition-colors duration-200"
+          >
+            {me.name}
+          </Link>
+        ) : (
+          <span className="py-2 px-2 rounded font-semibold">{me.name}</span>
+        )}
 
-            <button className="bg-[#6A98D0] text-white gap-2 flex items-center px-4 py-2 text-lg mt-2 rounded">
-              Quick Connect <MdAddLocationAlt className="text-2xl" />
-            </button>
+        {/* Sub-menu if exists */}
+        {me.links && (
+          <div className="ml-4 flex flex-col">
+            {me.links.map((link, subIndex) => (
+              <Link
+                key={subIndex}
+                href={link.href}
+                className="py-1 px-2 hover:bg-[#6A98D0] rounded transition-colors duration-200"
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
         )}
+      </div>
+    ))}
+
+    {/* Quick Connect button */}
+    <button className="bg-[#6A98D0] text-white gap-2 flex items-center px-4 py-2 text-lg mt-4 rounded">
+      Quick Connect <MdAddLocationAlt className="text-2xl" />
+    </button>
+  </div>
+)}
+
       </div>
     </>
   );

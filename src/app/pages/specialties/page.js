@@ -25,10 +25,7 @@ const Specialties = () => {
           <BillingSpatility />
         </div>
 
-        {/* Appointment Form */}
-        <div className="w-full">
-          <AppoinmentForm />
-        </div>
+      
       </div>
     </div>
   )
